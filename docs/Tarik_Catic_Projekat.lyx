@@ -1,0 +1,3113 @@
+#LyX file created by tex2lyx 2.5
+\lyxformat 643
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin C:/Users/PC/Desktop/finalni_srees/izvjestaj/
+\textclass article
+\begin_preamble
+% Izvjestaj projekta: Konvertor trofazne estimacije stanja (pravougaone koordinate)
+% Verzija pripremljena za CIST uvoz u LyX (File -> Import -> LaTeX (plain))
+% ili direktno kompajliranje pdfLaTeX-om.
+% Sve slike koriste [H] (paket float) da budu TACNO na svom mjestu (ne "plutaju").
+
+
+\PassOptionsToPackage{croatian}{babel}
+\usepackage{babel}
+\usepackage{verbatim}
+
+
+
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children no
+\language croatian
+\language_package default
+\inputencoding utf8
+\fontencoding T1
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\papersize a4
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\crossref_package prettyref
+\use_minted 0
+\use_lineno false
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style polish
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\docbook_mathml_version 0
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% ============================== NASLOVNA STRANA ============================
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+begin{titlepage}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset VSpace 1cm*
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+par 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+large
+\end_layout
+
+\end_inset
+
+ Univerzitet u Sarajevu
+\begin_inset Newline newline
+\end_inset
+
+ Elektrotehnički fakultet
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+par 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset VSpace 0.5cm
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+large
+\end_layout
+
+\end_inset
+
+ Odsjek za automatiku i elektroniku
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+par 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset VSpace 2.5cm
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+large
+\end_layout
+
+\end_inset
+
+ Predmet: 
+\series bold
+Strukture i režimi rada elektroenergetskih sistema
+\series default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+par 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset VSpace 2cm
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+par 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+Huge
+\end_layout
+
+\end_inset
+
+ 
+\series bold
+Konvertor trofazne estimacije stanja u pravougaonim koordinatama
+\series default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+par 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset VSpace 0.5cm
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+Large
+\end_layout
+
+\end_inset
+
+ Projektni izvještaj
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+par 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset VSpace 3cm
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+par 
+\end_layout
+
+\end_inset
+
+
+\series bold
+Student:
+\series default
+ Tarik Ćatić
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+[2pt]
+\end_layout
+
+\end_inset
+
+ 
+\series bold
+Broj indeksa:
+\series default
+ 19786
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+ 
+\series bold
+Profesor:
+\series default
+ Izudin Džafić
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+par 
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+large
+\end_layout
+
+\end_inset
+
+ Sarajevo, 2026.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+par 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+end{titlepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% ================================ SADRZAJ =================================
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% ================================= UVOD ===================================
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang croatian
+Uvod
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Estimacija stanja (
+\shape italic
+engl. state estimation
+\shape default
+) jedan je od temeljnih zadataka u nadzoru i vođenju elektroenergetskih sistema (EES). Njena je uloga da iz skupa redundantnih i šumom opterećenih mjerenja odredi najvjerovatnije stvarno stanje mreže – prije svega napone u čvorovima – koje potom služi kao ulaz za analize sigurnosti, proračun tokova snaga i optimizaciju pogona.
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Cilj ovog projekta jeste izrada 
+\series bold
+konvertora
+\series default
+ koji ulazne trofazne napone, zadate u polarnom obliku (magnituda i ugao po fazi), pretvara u 
+\series bold
+pravougaone (Dekartove) koordinate
+\series default
+ i na osnovu njih generiše kompletan model težinske metode najmanjih kvadrata (WLS) pogodan za rješavanje u alatu 
+\series bold
+Digital Twin (dTwin)
+\series default
+. Konverzija se izvršava u zasebnoj radnoj niti, dok se u drugoj niti u realnom vremenu prikazuje napredak, uz korisnički interfejs realizovan kao DLL dodatak (
+\shape italic
+plugin
+\shape default
+) za dTwin.
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Rad je organizovan na sljedeći način. U poglavlju 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:teorija"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+ date su teorijske osnove estimacije stanja, WLS metode te odnosa polarnih i pravougaonih koordinata. Poglavlje 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:zadatak"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+ opisuje postavku zadatka i format ulaznih podataka. Poglavlje 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:impl"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+ detaljno prikazuje arhitekturu i implementaciju plugina. Poglavlje 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:wls"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+ opisuje strukturu WLS modela i dodavanje mjernog šuma, a poglavlje 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:rezultati"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+ donosi rezultate i analizu. Zaključci su dati u poglavlju 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:zakljucak"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% ============================ TEORIJSKE OSNOVE ============================
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang croatian
+Teorijske osnove
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:teorija"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang croatian
+Estimacija stanja elektroenergetskog sistema
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+U realnoj mreži broj raspoloživih mjerenja (
+\begin_inset Formula $m$
+\end_inset
+
+) veći je od broja nepoznatih veličina stanja (
+\begin_inset Formula $n$
+\end_inset
+
+), tj. sistem je 
+\emph on
+predodređen
+\emph default
+ (
+\begin_inset Formula $m > n$
+\end_inset
+
+). Mjerenja su usto opterećena greškom mjernih uređaja. Estimacija stanja stoga nije obično rješavanje sistema jednačina, već traženje onog vektora stanja koji 
+\emph on
+najbolje
+\emph default
+ objašnjava sva mjerenja u statističkom smislu.
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Veza mjerenja 
+\begin_inset Formula $\mathbf{z}$
+\end_inset
+
+ i stanja 
+\begin_inset Formula $\mathbf{x}$
+\end_inset
+
+ data je mjernim modelom 
+\begin_inset Formula \begin{equation}
+\mathbf{z} = \mathbf{h}(\mathbf{x}) + \mathbf{e},
+\end{equation}
+\end_inset
+
+gdje je 
+\begin_inset Formula $\mathbf{h}(\cdot)$
+\end_inset
+
+ vektor mjernih funkcija, a 
+\begin_inset Formula $\mathbf{e}$
+\end_inset
+
+ vektor grešaka mjerenja, najčešće modelovan kao Gausov šum sa nultom srednjom vrijednošću.
+\end_layout
+
+\begin_layout Subsection
+
+\lang croatian
+Metoda težinskih najmanjih kvadrata (WLS)
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Najčešće korišten estimator jeste metoda težinskih najmanjih kvadrata (WLS). Ona minimizira težinsku sumu kvadrata odstupanja (reziduala) mjerenja od modelom predviđenih vrijednosti: 
+\begin_inset Formula \begin{equation}
+\label{eq:wls}
+J(\mathbf{x}) = \sum_{i=1}^{m} w_i \left( z_i - h_i(\mathbf{x}) \right)^2 ,
+\end{equation}
+\end_inset
+
+gdje je 
+\begin_inset Formula $w_i$
+\end_inset
+
+ težina mjerenja 
+\begin_inset Formula $i$
+\end_inset
+
+, obrnuto srazmjerna varijansi tog mjerenja, pa pouzdanija mjerenja imaju veći uticaj na rješenje. Minimum funkcije 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:wls"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+ nalazi se iterativno (Gauss–Newton), rješavanjem tzv. normalnih jednačina 
+\begin_inset Formula \begin{equation}
+\mathbf{G}\, \Delta\mathbf{x} = \mathbf{H}^{T} \mathbf{W}
+\left( \mathbf{z} - \mathbf{h}(\mathbf{x}) \right), \qquad
+\mathbf{G} = \mathbf{H}^{T} \mathbf{W} \mathbf{H},
+\end{equation}
+\end_inset
+
+gdje je 
+\begin_inset Formula $\mathbf{H}$
+\end_inset
+
+ Jakobijeva matrica mjerenja, 
+\begin_inset Formula $\mathbf{W}$
+\end_inset
+
+ dijagonalna matrica težina, a 
+\begin_inset Formula $\mathbf{G}$
+\end_inset
+
+ tzv. 
+\shape italic
+gain
+\shape default
+ matrica. Zbog rijetke (
+\shape italic
+sparse
+\shape default
+) strukture mreže, matrica 
+\begin_inset Formula $\mathbf{G}$
+\end_inset
+
+ je rijetka i faktorizuje se rijetkim metodama – što je posao internog solvera alata dTwin.
+\end_layout
+
+\begin_layout Subsection
+
+\lang croatian
+Polarne i pravougaone koordinate
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Napon čvora se može predstaviti kompleksnim brojem. U 
+\emph on
+polarnom
+\emph default
+ obliku zadaje se magnitudom 
+\begin_inset Formula $V_m$
+\end_inset
+
+ i uglom 
+\begin_inset Formula $V_a$
+\end_inset
+
+, a u 
+\emph on
+pravougaonom
+\emph default
+ realnim i imaginarnim dijelom: 
+\begin_inset Formula \begin{equation}
+\label{eq:konv}
+\underline{V} = V_m \angle V_a = e + \mathrm{j}\, f, \qquad
+e = V_m \cos V_a, \qquad f = V_m \sin V_a .
+\end{equation}
+\end_inset
+
+Veličine 
+\begin_inset Formula $e$
+\end_inset
+
+ i 
+\begin_inset Formula $f$
+\end_inset
+
+ (u ovom radu označene i kao 
+\begin_inset Formula $V_r$
+\end_inset
+
+ i 
+\begin_inset Formula $V_i$
+\end_inset
+
+) predstavljaju promjenljive stanja u pravougaonoj formulaciji. Prednost pravougaonih koordinata jeste da mrežne jednačine postaju 
+\emph on
+polinomske
+\emph default
+ (bez trigonometrijskih funkcija), što čini Jakobijan jednostavnijim i numerički stabilnijim. Upravo je pretvorba 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:konv"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+ jezgro ovog konvertora.
+\end_layout
+
+\begin_layout Subsection
+
+\lang croatian
+Trofazni sistemi i nebalansiranost
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Kod trofaznih sistema svaka sabirnica ima po tri napona – za faze A, B i C. U idealno balansiranom sistemu magnitude su jednake, a uglovi razmaknuti za 
+\begin_inset Formula $120^\circ$
+\end_inset
+
+ (
+\begin_inset Formula $0^\circ$
+\end_inset
+
+, 
+\begin_inset Formula $-120^\circ$
+\end_inset
+
+, 
+\begin_inset Formula $+120^\circ$
+\end_inset
+
+). U stvarnim mrežama, zbog nesimetričnih opterećenja i vodova, javlja se 
+\emph on
+nebalansiranost
+\emph default
+ – male razlike magnituda i odstupanja uglova od nominalnih. Konvertor obrađuje sve tri faze nezavisno, čime je omogućena i obrada nebalansiranih slučajeva.
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% ============================== POSTAVKA ZADATKA ==========================
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang croatian
+Postavka zadatka i ulazni podaci
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:zadatak"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang croatian
+Zahtjevi
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Zadatak obuhvata tri osnovna zahtjeva: 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang croatian
+konverziju napona 
+\begin_inset Formula $V,\theta \rightarrow V_r,V_i$
+\end_inset
+
+ po fazi, realizovanu u C++ u zasebnoj radnoj niti; 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang croatian
+prikaz napretka konverzije u realnom vremenu, u drugoj niti, na 
+\emph on
+thread-safe
+\emph default
+ način; 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang croatian
+grafički korisnički interfejs i isporuku kao DLL plugin za dTwin. 
+\end_layout
+
+\begin_layout Subsection
+
+\lang croatian
+Format ulaznog fajla
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Ulaz je MATPOWER (.m) datoteka koja sadrži trofazni blok napona. Parser prihvata 
+\series bold
+dva rasporeda
+\series default
+ i interno ih svodi na isti oblik.
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Prošireni format 
+\family typewriter
+bus3ph
+\family default
+ (7 kolona), korišten u test-fajlovima ovog projekta:
+\end_layout
+
+\begin_layout Verbatim
+mpc.bus3ph = [
+\end_layout
+
+\begin_layout Verbatim
+    busId  Vm_A  Va_A  Vm_B  Va_B  Vm_C  Va_C;
+\end_layout
+
+\begin_layout Verbatim
+    ...
+\end_layout
+
+\begin_layout Verbatim
+];
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Standardni MATPOWER format 
+\family typewriter
+bus3p
+\family default
+ (9 kolona), kakav se pojavljuje u stvarnim slučajevima (npr. t_case3p_a.m):
+\end_layout
+
+\begin_layout Verbatim
+mpc.bus3p = [
+\end_layout
+
+\begin_layout Verbatim
+    busid  type  basekV  Vm1  Vm2  Vm3  Va1  Va2  Va3;
+\end_layout
+
+\begin_layout Verbatim
+    ...
+\end_layout
+
+\begin_layout Verbatim
+];
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Ovdje su magnitude grupisane prije uglova; faze 1/2/3 odgovaraju fazama A/B/C. Sve ostale MATPOWER blokove (mpc.bus, mpc.branch, mpc.gen, ...) parser prepoznaje i preskače, tako da datoteka ostaje ispravan MATPOWER slučaj koji se može učitati i u MATLAB/Octave. 
+\begin_inset Formula $V_m$
+\end_inset
+
+ je magnituda napona faze u p.u., a 
+\begin_inset Formula $V_a$
+\end_inset
+
+ ugao u stepenima.
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% ============================== IMPLEMENTACIJA ===========================
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang croatian
+Arhitektura i implementacija
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:impl"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang croatian
+Struktura plugina
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Plugin je izgrađen korištenjem natID SDK-a i prati standardnu strukturu dTwin dodataka: 
+\family typewriter
+WindowPlugin
+\family default
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+TabView
+\family default
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family typewriter
+ViewConv
+\family default
+. Klasa 
+\family typewriter
+Plugin
+\family default
+ implementira sučelje 
+\family typewriter
+sc::IPlugin
+\family default
+ i izvozi se iz DLL-a funkcijom 
+\family typewriter
+getPluginInterface()
+\family default
+. Prozor sadrži pogled 
+\family typewriter
+ViewConv
+\family default
+ sa svim kontrolama (izbor ulazne/izlazne datoteke, opcije konverzije, traka napretka i status).
+\end_layout
+
+\begin_layout Subsection
+
+\lang croatian
+Parsiranje ulaznog fajla
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Parsiranje je realizovano konačnim automatom (
+\shape italic
+state machine
+\shape default
+) sa stanjima 
+\family typewriter
+Searching
+\family default
+, 
+\family typewriter
+SkippingBlock
+\family default
+, 
+\family typewriter
+InBus3Ph
+\family default
+ i 
+\family typewriter
+Done
+\family default
+. Automat traži trofazni blok, a ostale MATPOWER blokove preskače brojanjem dubine uglastih zagrada. Ključna funkcija za izdvajanje brojeva iz reda koristi 
+\family typewriter
+std::strtod
+\family default
+ umjesto podjele stringa, čime se izbjegava pogrešno tumačenje višestrukih razmaka (kolonsko poravnanje) kao praznih polja:
+\end_layout
+
+\begin_layout Verbatim
+static bool extractNumericRow(const td::String& row, td::UINT4 nExpectedCols,
+\end_layout
+
+\begin_layout Verbatim
+                              cnt::PushBackVector<double>& flatValues,
+\end_layout
+
+\begin_layout Verbatim
+                              td::String& status)
+\end_layout
+
+\begin_layout Verbatim
+{
+\end_layout
+
+\begin_layout Verbatim
+    const char* p = row.c_str();
+\end_layout
+
+\begin_layout Verbatim
+    double values[kMaxSrcCols];
+\end_layout
+
+\begin_layout Verbatim
+    td::UINT4 count = 0;
+\end_layout
+
+\begin_layout Verbatim
+    for (;;) {
+\end_layout
+
+\begin_layout Verbatim
+        while (*p==' '||*p==','||*p=='
+\backslash
+t'||*p=='
+\backslash
+r'||*p=='
+\backslash
+n') ++p;
+\end_layout
+
+\begin_layout Verbatim
+        if (*p == 0) break;
+\end_layout
+
+\begin_layout Verbatim
+        char* pEnd = nullptr;
+\end_layout
+
+\begin_layout Verbatim
+        double v = std::strtod(p, &pEnd);
+\end_layout
+
+\begin_layout Verbatim
+        if (pEnd == p) break;         // nije broj -> kraj reda
+\end_layout
+
+\begin_layout Verbatim
+        if (count < nExpectedCols) values[count] = v;
+\end_layout
+
+\begin_layout Verbatim
+        ++count; p = pEnd;
+\end_layout
+
+\begin_layout Verbatim
+    }
+\end_layout
+
+\begin_layout Verbatim
+    if (count == 0) return true;      // prazan red
+\end_layout
+
+\begin_layout Verbatim
+    if (count != nExpectedCols) { status = "ERROR!..."; return false; }
+\end_layout
+
+\begin_layout Verbatim
+    for (td::UINT4 i=0; i<nExpectedCols; ++i) flatValues.push_back(values[i]);
+\end_layout
+
+\begin_layout Verbatim
+    return true;
+\end_layout
+
+\begin_layout Verbatim
+}
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Nakon učitavanja, oba formata se preslikavaju u kanonski raspored (busId, Vm_A, Va_A, Vm_B, Va_B, Vm_C, Va_C), pa ostatak konvertora ne mora znati koji je format bio na ulazu.
+\end_layout
+
+\begin_layout Subsection
+
+\lang croatian
+Konverzija u radnoj niti
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Sama pretvorba 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:konv"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+ obavlja se u zasebnoj radnoj niti, po čvoru i po fazi. Podaci se čuvaju u gustim (
+\shape italic
+dense
+\shape default
+) matricama 
+\family typewriter
+dense::DblMatrix
+\family default
+, budući da su svi elementi popunjeni i nema matričnih operacija koje bi opravdale rijetki (
+\shape italic
+sparse
+\shape default
+) format.
+\end_layout
+
+\begin_layout Verbatim
+for (td::UINT4 node = 1; node <= model.nodeCount; ++node)
+\end_layout
+
+\begin_layout Verbatim
+  for (td::UINT4 phase = 0; phase < kNumPhases; ++phase) {
+\end_layout
+
+\begin_layout Verbatim
+    double Vm    = bus(node, 2 + phase*2);
+\end_layout
+
+\begin_layout Verbatim
+    double VaDeg = bus(node, 3 + phase*2);
+\end_layout
+
+\begin_layout Verbatim
+    double VaRad = VaDeg * kPi / 180.0;
+\end_layout
+
+\begin_layout Verbatim
+    outVr(node, phase+1) = Vm * std::cos(VaRad);   // e = Vm*cos
+\end_layout
+
+\begin_layout Verbatim
+    outVi(node, phase+1) = Vm * std::sin(VaRad);   // f = Vm*sin
+\end_layout
+
+\begin_layout Verbatim
+    processedSteps.fetch_add(1);                    // za prikaz napretka
+\end_layout
+
+\begin_layout Verbatim
+  }
+\end_layout
+
+\begin_layout Subsection
+
+\lang croatian
+Višenitnost i prikaz napretka
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Zahtjev za prikazom napretka u realnom vremenu ostvaren je pomoću dvije niti: 
+\end_layout
+
+\begin_layout Itemize
+
+\lang croatian
+
+\series bold
+radna nit
+\series default
+ – izvršava konverziju i 
+\emph on
+jedina
+\emph default
+ upisuje brojač 
+\family typewriter
+processedSteps
+\family default
+; 
+\end_layout
+
+\begin_layout Itemize
+
+\lang croatian
+
+\series bold
+nit napretka
+\series default
+ – 
+\emph on
+jedina
+\emph default
+ čita taj brojač i periodično (svakih oko 30 ms) računa i prijavljuje procenat završenosti. 
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Budući da postoji tačno jedan pisac i jedan čitač za svaku dijeljenu veličinu, korišten je 
+\family typewriter
+std::atomic
+\family default
+ bez potrebe za mutexom, čime se izbjegavaju utrke podataka (
+\shape italic
+data race
+\shape default
+). Sam GUI se ne blokira: pogled pokreće ove dvije niti na pozadinskoj niti, a ažuriranja trake napretka i završetka se u glavnu (GUI) nit prosljeđuju preko 
+\family typewriter
+NatObject::asyncCall
+\family default
+.
+\end_layout
+
+\begin_layout Subsection
+
+\lang croatian
+Generisanje izlaznog modela
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Rezultat konverzije se upisuje u 
+\family typewriter
+.dmodl
+\family default
+ (digitalni model) i prateći 
+\family typewriter
+.vmodl
+\family default
+ (vizuelni model / definicija grafa). Model se piše direktno u datoteku (klasa 
+\family typewriter
+FileSink
+\family default
+), a ne kroz trajnu memorijsku arhivu plugina. Time se izbjegava greška u kojoj bi uzastopne konverzije u istoj sesiji nadovezivale više modela u jednu datoteku (dva Header/Model bloka), što dTwin ne može otvoriti.
+\end_layout
+
+\begin_layout Subsection
+
+\lang croatian
+Korisnički interfejs
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Interfejs (slika 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:gui"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+) organizovan je u logičke sekcije: ulaz/izlaz, opcije konverzije (naziv modela, opcija dodavanja mjernog šuma i njegova standardna devijacija), traka napretka sa statusom, te pregled ulazne datoteke. Dugme 
+\family typewriter
+Convert
+\family default
+ pokreće konverziju, a 
+\family typewriter
+Info
+\family default
+ učitava sadržaj ulazne datoteke.
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename slike/gui.png
+	width 62text%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Korisnički interfejs konvertora (ViewConv).
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:gui"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% ============================ WLS U DTWINU ================================
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang croatian
+WLS estimacija u dTwinu
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:wls"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Konvertor 
+\emph on
+postavlja
+\emph default
+ problem estimacije, a 
+\emph on
+rješava
+\emph default
+ ga interni WLS solver alata dTwin (dugme 
+\family typewriter
+Solve
+\family default
+). Generisani 
+\family typewriter
+.dmodl
+\family default
+ model sadrži blok 
+\family typewriter
+Vars
+\family default
+ (promjenljive stanja 
+\begin_inset Formula $e_i$
+\end_inset
+
+, 
+\begin_inset Formula $f_i$
+\end_inset
+
+ po fazi svakog čvora), blok 
+\family typewriter
+Params
+\family default
+ (mjerenja i težine) i blok 
+\family typewriter
+WLSEs
+\family default
+ (jednačine težinskih najmanjih kvadrata). Indeksiranje stanja je 
+\begin_inset Formula $i = (\text{čvor}-1)\cdot 3 + \text{faza}$
+\end_inset
+
+, pa za mrežu od 
+\begin_inset Formula $N$
+\end_inset
+
+ čvorova postoji 
+\begin_inset Formula $3N$
+\end_inset
+
+ parova 
+\begin_inset Formula $(e_i, f_i)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+
+\lang croatian
+Dodavanje mjernog šuma
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Budući da su ulazne vrijednosti idealne (rezultat egzaktnog proračuna), bez šuma estimator nema šta da filtrira. Da bi se demonstrirala 
+\emph on
+stvarna
+\emph default
+ estimacija, opcionalno se mjerenja generišu kao 
+\emph on
+tačna vrijednost + Gausov šum
+\emph default
+, čime se oponaša ponašanje realnog mjernog uređaja: 
+\begin_inset Formula \begin{equation}
+z_{r,i} = e_{T,i} + \mathcal{N}(0,\sigma), \qquad
+z_{i,i} = f_{T,i} + \mathcal{N}(0,\sigma).
+\end{equation}
+\end_inset
+
+Da bi estimator mogao filtrirati šum, svakoj se komponenti pridružuje 
+\emph on
+više nezavisnih
+\emph default
+ zašumljenih mjerenja (redundancija), pa je rješenje usrednjeni najbolji pogodak, a ne kopija jednog mjerenja.
+\end_layout
+
+\begin_layout Subsection
+
+\lang croatian
+Statistika greške
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+U bloku 
+\family typewriter
+PostProc
+\family default
+ se za svako stanje akumulira apsolutna greška 
+\begin_inset Formula $|e_i - e_{T,i}|$
+\end_inset
+
+ i 
+\begin_inset Formula $|f_i - f_{T,i}|$
+\end_inset
+
+, te se računaju izlazni pokazatelji 
+\family typewriter
+minErr
+\family default
+, 
+\family typewriter
+maxErr
+\family default
+, 
+\family typewriter
+avgErr
+\family default
+ i 
+\family typewriter
+devErr
+\family default
+. Kako se šum osvježava u svakom prolazu petlje 
+\family typewriter
+Repeats
+\family default
+, statistika greške efektivno predstavlja mali Monte-Carlo uzorak.
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% ============================ REZULTATI ==================================
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang croatian
+Rezultati i analiza
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:rezultati"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang croatian
+Test slučajevi
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Korišteno je više test-slučajeva različite veličine i stepena nebalansiranosti (tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:testovi"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Korišteni test-slučajevi.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:testovi"
+
+\end_inset
+
+ 
+\begin_inset Tabular 
+<lyxtabular version="3" rows="5" columns="4">
+<features booktabs="true" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang croatian
+
+\series bold
+Datoteka
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang croatian
+
+\series bold
+Čvorova
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang croatian
+
+\series bold
+Format
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang croatian
+
+\series bold
+Karakteristika
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang croatian
+case3_mini_3ph.m 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang croatian
+3 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang croatian
+bus3ph 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang croatian
+balansiran, opadajuća magnituda 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang croatian
+t_case3p_a.m 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang croatian
+4 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang croatian
+bus3p 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang croatian
+standardni MATPOWER, balansiran 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang croatian
+case9_3ph.m 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang croatian
+9 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang croatian
+bus3ph 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang croatian
+blaga nebalansiranost 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang croatian
+case14_3ph.m 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang croatian
+14 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang croatian
+bus3ph 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang croatian
+vidljiva nebalansiranost 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang croatian
+Provjera tačnosti konverzije
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Za balansiran slučaj (
+\begin_inset Formula $V_m=1$
+\end_inset
+
+, 
+\begin_inset Formula $V_a=0^\circ / -120^\circ / +120^\circ$
+\end_inset
+
+) konverzija daje egzaktne vrijednosti: faza A 
+\begin_inset Formula $(1{,}0;\ 0{,}0)$
+\end_inset
+
+, faza B 
+\begin_inset Formula $(-0{,}5;\ -0{,}866)$
+\end_inset
+
+, faza C 
+\begin_inset Formula $(-0{,}5;\ +0{,}866)$
+\end_inset
+
+, što je i ručno provjereno; maksimalno odstupanje bilo je reda 
+\begin_inset Formula $10^{-9}$
+\end_inset
+
+. Napominjemo da je 
+\begin_inset Formula $\cos(-120^\circ)=\cos(120^\circ)=-0{,}5$
+\end_inset
+
+, pa se krive 
+\begin_inset Formula $V_r^B$
+\end_inset
+
+ i 
+\begin_inset Formula $V_r^C$
+\end_inset
+
+ potpuno preklapaju.
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Slika 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:case3"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+ prikazuje slučaj case3 (balansiran): bez šuma su sve linije savršeno ravne (svi čvorovi imaju iste napone), dok se sa dodatim šumom javlja blago talasanje oko istih vrijednosti.
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename slike/case3_real.png
+	width 80text%
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+[6pt]
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename slike/case3_sa_greskom.png
+	width 80text%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Naponske komponente za case3 (balansiran): gore bez šuma, dolje sa mjernim šumom.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:case3"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Analogan rezultat za standardni MATPOWER format (
+\family typewriter
+bus3p
+\family default
+, datoteka t_case3p_a.m sa 4 čvora) prikazan je na slici 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:case3mp"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+, čime je potvrđena i ispravnost parsiranja drugog ulaznog formata.
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename slike/case3_mp_real.png
+	width 80text%
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+[6pt]
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename slike/case3_mp_sa_greskom.png
+	width 80text%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Standardni MATPOWER slučaj t_case3p_a (4 čvora): gore bez šuma, dolje sa mjernim šumom.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:case3mp"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang croatian
+Nebalansirani slučajevi
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Za razliku od balansiranih slučajeva (ravne linije), slučajevi case9 i case14 sadrže stvarnu nebalansiranost, pa su naponske krive prirodno talasaste i bez šuma – to je stvarni naponski profil mreže. Dodavanjem mjernog šuma krive postaju hrapavije, ali zadržavaju isti opšti oblik, jer estimator prepoznaje pravi profil ispod šuma.
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Slika 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:case9"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+ prikazuje slučaj case9 (9 čvorova, blaga nebalansiranost), a slika 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:case14"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+ slučaj case14 (14 čvorova, izraženija nebalansiranost). Kod većih mreža je efekat nebalansiranosti dominantniji od šuma, pa se dva grafika (bez i sa šumom) više liče – šum tek blago „hrapavi
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"
+\end_layout
+
+\end_inset
+
+ već postojeće talasanje.
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename slike/case9_bez_suma.png
+	width 80text%
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+[6pt]
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename slike/case9_sa_sumom.png
+	width 80text%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Naponske komponente po čvoru za case9 (9 čvorova): gore bez šuma, dolje sa mjernim šumom.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:case9"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename slike/case14_bez_suma.png
+	width 80text%
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+[6pt]
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename slike/case14_sa_sumom.png
+	width 80text%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Naponske komponente po čvoru za case14 (14 čvorova): gore bez šuma, dolje sa mjernim šumom 
+\begin_inset Formula $\sigma = 0{,}03$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:case14"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang croatian
+Istorija rješavanja
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Tabela rješenja u dTwinu (slika 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:iteracije"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+) prikazuje istoriju iteracija. Za 
+\begin_inset Formula $N$
+\end_inset
+
+ čvorova petlja 
+\family typewriter
+Repeats
+\family default
+ pravi 
+\begin_inset Formula $N$
+\end_inset
+
+ prolaza (svaki sa svojim šumom), a svaki prolaz konvergira u dvije iteracije, pa se ispisuje po tri reda (Initial, IterBase, riješeno). Kolona 
+\family typewriter
+eps
+\family default
+ prati konvergenciju.
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename slike/iteracije.png
+	width 95text%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Istorija rješavanja WLS problema (kolone 
+\begin_inset Formula $e_i$
+\end_inset
+
+, 
+\begin_inset Formula $f_i$
+\end_inset
+
+, 
+\family typewriter
+eps
+\family default
+).
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:iteracije"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang croatian
+Analiza greške estimacije
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Ključni pokazatelj ispravnosti estimacije jeste odnos prosječne greške estimacije 
+\family typewriter
+avgErr
+\family default
+ i jačine ubačenog šuma 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ (tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:greska"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+). U svim slučajevima je 
+\family typewriter
+avgErr
+\family default
+ osjetno manji od 
+\begin_inset Formula $\sigma$
+\end_inset
+
+, što dokazuje da WLS 
+\emph on
+filtrira
+\emph default
+ šum. Izlazni pokazatelji greške (
+\family typewriter
+minErr
+\family default
+, 
+\family typewriter
+maxErr
+\family default
+, 
+\family typewriter
+avgErr
+\family default
+, 
+\family typewriter
+devErr
+\family default
+) koje model ispisuje u rješenju prikazani su na slici 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:greske"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics 
+	filename slike/greske.png
+	width 80text%
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Statistika greške estimacije: minimalna, maksimalna, prosječna i devijacija apsolutne greške 
+\begin_inset Formula $|e_i - e_{T,i}|$
+\end_inset
+
+ kroz sve čvorove i prolaze.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:greske"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Prosječna greška estimacije u zavisnosti od jačine šuma.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:greska"
+
+\end_inset
+
+ 
+\begin_inset Tabular 
+<lyxtabular version="3" rows="3" columns="3">
+<features booktabs="true" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset Formula $\sigma$
+\end_inset
+
+ (ubačeni šum) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang croatian
+
+\family typewriter
+avgErr
+\family default
+ (greška estimacije) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang croatian
+odnos 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang croatian
+0,01 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang croatian
+oko 0,0053 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang croatian
+oko 53% 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang croatian
+0,03 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang croatian
+oko 0,0174 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang croatian
+oko 58% 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Rezultat se slaže s teorijom: usrednjavanje dva nezavisna mjerenja smanjuje standardnu devijaciju greške za faktor 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+ (na oko 
+\begin_inset Formula $0{,}71\sigma$
+\end_inset
+
+), a srednje apsolutno odstupanje Gausove raspodjele iznosi oko 
+\begin_inset Formula $0{,}8$
+\end_inset
+
+ te vrijednosti, što daje 
+\begin_inset Formula $\text{avgErr}\approx 0{,}57\sigma$
+\end_inset
+
+ – upravo kako je i izmjereno.
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% ============================== ZAKLJUCAK ================================
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang croatian
+Zaključak
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:zakljucak"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+U radu je realizovan konvertor trofazne estimacije stanja u pravougaonim koordinatama, isporučen kao DLL plugin za dTwin. Ispunjeni su svi postavljeni zahtjevi: konverzija 
+\begin_inset Formula $V,\theta \rightarrow V_r,V_i$
+\end_inset
+
+ po fazi u zasebnoj radnoj niti, prikaz napretka u realnom vremenu na 
+\emph on
+thread-safe
+\emph default
+ način, te grafički interfejs sa plugin arhitekturom.
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Uz osnovne zahtjeve, implementiran je i robustan parser koji podržava dva MATPOWER formata, generisanje WLS modela sa pratećim grafom, te opcioni režim sa mjernim šumom u kojem estimator obavlja stvarnu estimaciju. Analiza je pokazala da je prosječna greška estimacije dosljedno manja od jačine ubačenog šuma, čime je potvrđeno ispravno filtriranje.
+\end_layout
+
+\begin_layout Standard
+
+\lang croatian
+Kao mogući pravci proširenja izdvajaju se: uvođenje mrežne topologije (admitantne matrice) radi redundancije zasnovane na mjerenjima snaga i tokova, te podrška za veće mreže uz optimizaciju generisanja modela.
+\end_layout
+
+\end_body
+\end_document
